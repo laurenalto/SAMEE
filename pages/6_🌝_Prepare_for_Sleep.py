@@ -2,9 +2,6 @@ import streamlit as st
 import time
 from streamlit_extras.let_it_rain import rain
 
-
-
-
 st.set_page_config(page_title="Prepare for Sleep", page_icon="🌝")
 
 st.markdown("# 🌝 Prepare for Sleep")
@@ -21,13 +18,12 @@ st.write(
 # set out clothes for tomorrow, change into pyjamas, brush teeth, floss, wash face
 output_placeholder1 = st.empty()
 
-
 def count_down(ts, placeholder):
     output_placeholder = st.empty()
     while ts:
         mins, secs = divmod(ts, 60)
         timer = '{:02d}:{:02d}'.format(mins, secs)
-        output_placeholder.write("{}".format(timer))
+        placeholder.write("{}".format(timer))
         #st.write(timer, end="\r")
         time.sleep(1)
         ts -= 1
