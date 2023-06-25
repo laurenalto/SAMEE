@@ -41,7 +41,7 @@ st.markdown(
     """
     It's time to sleep!
     Samee (Sleep Assistant Meets Electronic Encouragement) is a virtual sleep assistant designed to help you complete your sleep routines. Please **sign-in** to 
-    track your progress and connect with your caregivers. It's currently:
+    track your progress and connect with your caregivers.
   
 """
 )
