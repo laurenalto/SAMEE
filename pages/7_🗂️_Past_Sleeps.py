@@ -25,3 +25,4 @@ for i in range(1, 20):
     time.sleep(0.05)
 
 progress_bar.empty()
+st.write('Your sleep duration over the past 100 days. Try to keep it more consistent!')
