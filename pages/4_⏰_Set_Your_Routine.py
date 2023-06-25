@@ -59,8 +59,9 @@ if nr == 'Yes':
     'Night Routine Activities:',
     ['Brush Teeth', 'Floss', 'Wash Face', 'Change into pyjamas', 'Read', 'Medidate', "Write down tomorrow's goals", 'Stretch', 'Drink water', 'Set alarm', 'Set out clothes for tomorrow', 'Set out breakfast for tomorrow', 'Set out lunch for tomorrow', 'Set out snacks for tomorrow', 'Set out bag for tomorrow', 'Set out keys for tomorrow', 'Set out wallet for tomorrow', 'Set out phone charger for tomorrow', 'Set out work materials for tomorrow', 'Set out gym bag for tomorrow', 'Set out yoga mat for tomorrow', 'Set out running shoes for tomorrow', 'Set out water bottle for tomorrow', 'Set out headphones for tomorrow', 'Set out mask for tomorrow', 'Set out hand sanitizer for tomorrow', 'Set out umbrella for tomorrow'], default=None)
     st.write('You selected:', options)
+    #export options for use in other files
+    
     progress_bar.progress(80)
-
     #make table where person can add activities and alot amount of time
     # select from a list, or create new activities
     
@@ -68,6 +69,8 @@ saved = st.button("Save Routine")
 if saved:
     st.write('Your routine has been saved.')
     progress_bar.progress(100)
+    
+
 
 
 # # Streamlit widgets automatically run the script from top to bottom. Since
