@@ -15,16 +15,16 @@ status_text = st.sidebar.empty()
 
 #setting sleep time
 bed = st.time_input('What time would you like to go to bed?', datetime.time(20, 30))
-st.write('Bedtime reminder is set for', bed)
+st.write('🛌 Bedtime', bed)
 progress_bar.progress(10)
 
 wake = st.time_input('What time would you like to wake up?', datetime.time(6, 45))
-st.write('Alarm is set for', wake)
+st.write('⏰ Alarm', wake)
 progress_bar.progress(20)
 
 #calculates sleep time base on bed and wake up time, without day writing
 sleepTime = (datetime.datetime.combine(datetime.date.min, wake) - datetime.datetime.combine(datetime.date.min, bed)) + datetime.timedelta(hours=24)
-st.write('You will get', sleepTime, 'of sleep.')
+st.write('## You will sleep', sleepTime, 'hours.')
 
 #different messages according to amount of sleep
 if sleepTime < datetime.timedelta(hours=6):
@@ -33,7 +33,7 @@ if sleepTime < datetime.timedelta(hours=6):
     progress_bar.progress(30)
     
 elif sleepTime > datetime.timedelta(hours=8):
-    st.write('According to the National Sleep Institute, you are have set a legitimate sleep time. **Great work!**')
+    st.write('According to the National Sleep Institute, you are receiving an appropriate amount of sleep time. **Great work!**')
     progress_bar.progress(30)
     
 else:
@@ -47,7 +47,7 @@ bedremind = st.radio(
 
 if bedremind == 'Yes':
     st.write('Reminder set for', bed)
-    progress_bar.progress(40)
+    progress_bar.progress(50)
     
 #ask user if they have a night routine
 nr = st.radio(
@@ -60,10 +60,16 @@ if nr == 'Yes':
     'Night Routine Activities:',
     ['Brush Teeth', 'Floss', 'Wash Face', 'Change into pyjamas', 'Read', 'Medidate', "Write down tomorrow's goals", 'Stretch', 'Drink water', 'Set alarm', 'Set out clothes for tomorrow', 'Set out breakfast for tomorrow', 'Set out lunch for tomorrow', 'Set out snacks for tomorrow', 'Set out bag for tomorrow', 'Set out keys for tomorrow', 'Set out wallet for tomorrow', 'Set out phone charger for tomorrow', 'Set out work materials for tomorrow', 'Set out gym bag for tomorrow', 'Set out yoga mat for tomorrow', 'Set out running shoes for tomorrow', 'Set out water bottle for tomorrow', 'Set out headphones for tomorrow', 'Set out mask for tomorrow', 'Set out hand sanitizer for tomorrow', 'Set out umbrella for tomorrow'], default=None)
     st.write('You selected:', options)
-    progress_bar.progress(50)
+    progress_bar.progress(80)
 
     #make table where person can add activities and alot amount of time
     # select from a list, or create new activities
+    
+saved = st.button("Save Routine")
+if saved:
+    st.write('Your routine has been saved.')
+    progress_bar.progress(100)
+
     
 
 # progress_bar.empty()
