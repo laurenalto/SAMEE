@@ -1,9 +1,8 @@
-# Samee
-# Samee - Virtual Sleep Assistant
+# SAMEE - Virtual Sleep Assistant
 
-![Samee Logo](samee_logo.png)
+![SAMEE Logo](SAMEE_logo.png)
 
-Samee (Sleep Assistant Meets Electronic Encouragement) is a virtual sleep assistant designed to help you complete your sleep routines and improve your sleep habits. Whether you're struggling with falling asleep, maintaining a consistent sleep schedule, or need guidance on establishing a healthy nighttime routine, Samee is here to assist you.
+SAMEE (Sleep Assistant for Mindful Evening Exercises) is a virtual sleep assistant designed to help you complete your sleep routines and improve your sleep habits. Whether you're struggling with falling asleep, maintaining a consistent sleep schedule, or need guidance on establishing a healthy nighttime routine, SAMEE is here to assist you.
 
 ## Features
 
@@ -11,17 +10,17 @@ Samee (Sleep Assistant Meets Electronic Encouragement) is a virtual sleep assist
 
 2. **Personal Information**: Set your personal information to receive customized sleep recommendations and connect with your caregivers. Provide details such as your date of birth, gender, height, weight, allergies, medications, medical conditions, and caregiver contact information.
 
-3. **Set Your Routine**: Establish your ideal sleep routine by answering a series of questions. Specify your desired bedtime and wake-up time, and Samee will calculate the recommended sleep duration. You can also opt for bedtime reminders and create a personalized night routine with various activities.
+3. **Set Your Routine**: Establish your ideal sleep routine by answering a series of questions. Specify your desired bedtime and wake-up time, and SAMEE will calculate the recommended sleep duration. You can also opt for bedtime reminders and create a personalized night routine with various activities.
 
-4. **Prepare for Sleep**: Follow the instructions and complete tasks to prepare for bed. Samee will guide you through activities such as setting out clothes for tomorrow, brushing your teeth, washing your face, and more. Each task is accompanied by a countdown timer to help you manage your time effectively.
+4. **Prepare for Sleep**: Follow the instructions and complete tasks to prepare for bed. SAMEE will guide you through activities such as setting out clothes for tomorrow, brushing your teeth, washing your face, and more. Each task is accompanied by a countdown timer to help you manage your time effectively.
 
 5. **Past Sleeps**: Track your sleep duration and view your progress over the past 100 days. A line chart visually represents your sleep duration, allowing you to identify patterns and work towards more consistent sleep habits.
 
-6. **Additional Sources**: Explore additional personalized sleep resources to enhance your sleep knowledge. Samee provides personalized recommendations based on your profile and offers prescribed readings from reputable sources. You can also request more resources from your care provider if needed.
+6. **Additional Sources**: Explore additional personalized sleep resources to enhance your sleep knowledge. SAMEE provides personalized recommendations based on your profile and offers prescribed readings from reputable sources. You can also request more resources from your care provider if needed.
 
 ## Getting Started
 
-To run the Samee app locally, follow these steps:
+To run the SAMEE app locally, follow these steps:
 
 1. Install the required dependencies by running the following command:
 
@@ -47,7 +46,7 @@ To run the Samee app locally, follow these steps:
 
 ## Dependencies
 
-The Samee app relies on the following dependencies:
+The SAMEE app relies on the following dependencies:
 
 - `streamlit`: The core library used to create the web application.
 - `streamlit_extras`: Provides the rain effect used in the Prepare for Sleep section.
@@ -56,12 +55,12 @@ You can install the dependencies manually using `pip` or by including them in yo
 
 ## Support
 
-If you encounter any issues or have any questions or feedback, please reach out to our support team at support@samee.com. We are here to help you!
+If you encounter any issues or have any questions or feedback, please reach out to our support team at support@SAMEE.com. We are here to help you!
 
 ## License
 
-The Samee app is released under the [MIT License](https://opensource.org/licenses/MIT). Feel free to modify and use the code for your own purposes.
+The SAMEE app is released under the [MIT License](https://opensource.org/licenses/MIT). Feel free to modify and use the code for your own purposes.
 
 ---
 
-Thank you for choosing Samee as your virtual sleep assistant! We hope it helps you establish healthy sleep habits and improve your overall well-being. Sleep well!
+Thank you for choosing SAMEE as your virtual sleep assistant! We hope it helps you establish healthy sleep habits and improve your overall well-being. Sleep well!
