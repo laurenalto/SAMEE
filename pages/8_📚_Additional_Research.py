@@ -26,15 +26,17 @@ st.markdown(
     
 """
 )
-#get current time and date
+st.write('Have you finished all the readings? If so, click the button below to request some more, and inform your care provider!')
+request = st.button("More Resources!")
 
- ### keeping for template 
-    # - Use a neural net to [analyze the Udacity Self-driving Car Image
-    #     Dataset](https://github.com/streamlit/demo-self-driving)
-    # - Explore a [New York City rideshare dataset](https://github.com/streamlit/demo-uber-nyc-pickups)
-    
-    
-
+if request:
+    st.success("Your request has been sent to your care provider!")
+    rain(
+    emoji="📚",
+    font_size=44,
+    falling_speed=8,
+    animation_length="3s",
+    )
     
     
     
