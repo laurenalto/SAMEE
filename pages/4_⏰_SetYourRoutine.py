@@ -41,28 +41,30 @@ else:
     
 
 #check box would you like to receive bedtime reminders?
-st.write('Would you like to receive bedtime reminders?')
-st.checkbox('Yes')
-st.checkbox('No')
+bedremind = st.radio(
+    "Would you like to receive bedtime reminders?",
+    ('Yes', 'No'))
 
-if st.checkbox('Yes'):
+if bedremind == 'Yes':
     st.write('Reminder set for', bed)
     progress_bar.progress(40)
     
 #ask user if they have a night routine
-st.write('Would you like to create a night routine?') #add link to night routine page
-st.checkbox('Yes')
-st.checkbox('No')
-if st.checkbox('Yes'):
+nr = st.radio(
+    "Would you like to create a night routine?",
+    ('Yes', 'No'))
+
+if nr == 'Yes':
     st.write('Great! Please select the activities you would like to include in your night routine:')
-    
+    options = st.multiselect(
+    'Night Routine Activities:',
+    ['Brush Teeth', 'Floss', 'Wash Face', 'Change into pyjamas', 'Read', 'Medidate', "Write down tomorrow's goals", 'Stretch', 'Drink water', 'Set alarm', 'Set out clothes for tomorrow', 'Set out breakfast for tomorrow', 'Set out lunch for tomorrow', 'Set out snacks for tomorrow', 'Set out bag for tomorrow', 'Set out keys for tomorrow', 'Set out wallet for tomorrow', 'Set out phone charger for tomorrow', 'Set out work materials for tomorrow', 'Set out gym bag for tomorrow', 'Set out yoga mat for tomorrow', 'Set out running shoes for tomorrow', 'Set out water bottle for tomorrow', 'Set out headphones for tomorrow', 'Set out mask for tomorrow', 'Set out hand sanitizer for tomorrow', 'Set out umbrella for tomorrow'], default=None)
+    st.write('You selected:', options)
+    progress_bar.progress(50)
+
     #make table where person can add activities and alot amount of time
     # select from a list, or create new activities
-    st.checkbox('Brush teeth')
-    st.checkbox('Floss')
-    st.
-    progress_bar.progress(50)
-    st
+    
 
 # progress_bar.empty()
 
