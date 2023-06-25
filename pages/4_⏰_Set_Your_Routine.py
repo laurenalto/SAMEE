@@ -1,6 +1,5 @@
 import streamlit as st
 import datetime
-import numpy as np
 
 st.set_page_config(page_title="Set Your Routine", page_icon="⏰")
 
@@ -72,7 +71,7 @@ if saved:
 
     
 
-# progress_bar.empty()
+progress_bar.empty()
 
 # # Streamlit widgets automatically run the script from top to bottom. Since
 # # this button is not connected to any other logic, it just causes a plain
