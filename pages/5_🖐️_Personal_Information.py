@@ -3,7 +3,7 @@ import datetime
 
 st.set_page_config(page_title="Personal Information", page_icon="🖐️")
 
-st.markdown("# {name}'s Personal Information".format(name="Sammy"))
+st.markdown("# 😉 {name}'s Personal Information".format(name="Sammy"))
 st.sidebar.header("Personal Information")
 st.write(
     """Set your personal information to receive customized sleep recommendations and connect with your caregivers."""

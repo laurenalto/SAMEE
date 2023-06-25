@@ -1,6 +1,7 @@
 import streamlit as st
 
 from datetime import date
+from streamlit_extras.let_it_rain import rain
 
 today = date.today()
 d2 = today.strftime("%B %d, %Y")
@@ -56,7 +57,12 @@ userPwd = st.text_input('Password', '')
 
 if userIn == user["userName"] and userPwd == user["pwd"]:
     st.success('Welcome {}'.format(user["name"]))
-    st.balloons()
+    rain(
+    emoji="👋",
+    font_size=44,
+    falling_speed=8,
+    animation_length="5s",
+)
     st.write("It's ", d2, "!")
     st.write("It's time to sleep! Check the tabs to complete your nightly routines.")
     # other pages now become available

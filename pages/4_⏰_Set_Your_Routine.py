@@ -69,9 +69,6 @@ if saved:
     st.write('Your routine has been saved.')
     progress_bar.progress(100)
 
-    
-
-progress_bar.empty()
 
 # # Streamlit widgets automatically run the script from top to bottom. Since
 # # this button is not connected to any other logic, it just causes a plain
