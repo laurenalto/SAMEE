@@ -36,6 +36,10 @@ if physician == "Yes":
     physicianNum = st.text_input('Phone Number', '')
     physicianEmail = st.text_input('Email', '')
     
+saved = st.button("Save Routine")
+if saved:
+    st.write('Your routine has been saved.')
     
+       
 #save button
 
